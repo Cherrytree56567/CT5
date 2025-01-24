@@ -1,0 +1,366 @@
+@font-face {
+    font-family: "SFPro";
+    font-weight: 100;
+    src: url("fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 200;
+    src: url("fonts/SF-Pro-Display-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 300;
+    src: url("fonts/SF-Pro-Display-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 400;
+    src: url("fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 500;
+    src: url("fonts/SF-Pro-Display-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 600;
+    src: url("fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 700;
+    src: url("fonts/SF-Pro-Display-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 800;
+    src: url("fonts/SF-Pro-Display-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SFPro";
+    font-weight: 900;
+    src: url("fonts/SF-Pro-Display-Black.otf") format("opentype");
+}
+
+body {
+    background-color: #1e1e2e;
+    font-family: "SFPro";
+    color: #d2d2ff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+p, h1, h2, h3, span, a, i {
+    transition: color 0.3s ease;
+}
+
+i:hover, p:hover, h1:hover, h2:hover, h3:hover, span:hover, a:hover {
+    color: #adadff !important;
+}
+
+a {
+    text-decoration: none;
+    color: #d2d2ff;
+}
+
+/*
+ * Navbar
+*/
+.navbar {
+    height: 5vh;
+    background: #42435b73;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 13px;
+    padding-right: 15px;
+    position: sticky;
+    top: .5rem;
+    z-index: 1000;
+    width: 95vw;
+    transition: width 0.5s ease;
+}
+
+.navbar.shrink {
+    width: 32.25rem;
+}
+
+.navbar i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar p {
+    cursor: pointer;
+}
+
+@media (max-width: 1040px) {
+    .navbar {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 570px) {
+    .navbar.shrink {
+        width: 28rem;
+    }
+}
+
+@media (max-width: 518px) {
+    .navbar {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar.shrink {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .navbar.shrink {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar.shrink {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar.shrink {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .navbar {
+        width: 80vw;
+    }
+    .navbar.shrink {
+        width: 18rem;
+    }
+}
+
+/*
+ * Container
+*/
+.container {
+    max-width: 40rem;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: #42435b73;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+    border-radius: 0.7rem;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.card-desc {
+    margin-top: 0.3rem;
+    font-family: "Source Code Pro", serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.langs {
+    font-size: 2.7rem;
+}
+
+.card-right img {
+    border-radius: 0.5rem;
+    width: 11rem;
+    margin-top: 1.5rem;
+}
+
+.card-info {
+    background: #42435b73;
+    margin-top: .7rem;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    border-radius: .2rem;
+    margin-left: -.1rem;
+    font-size: 0.7rem;
+    border: .1rem solid #45475a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+@media (max-width: 600px) {
+    .card {
+        margin: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    .card-right {
+        display: none;
+    }
+}
+
+/*
+ * Projects
+*/
+.projects {
+    padding: 3.2rem;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    padding-bottom: 0 !important;
+    padding: 3.2rem;
+    color: white;
+    width: fit-content;
+    z-index: 1;
+}
+
+.project-card {
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 14rem;
+    border: .1rem solid #45475a;
+    background-color: #42435b73;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 14rem;
+    border-radius: .5rem;
+}
+
+.project-card .desc {
+    font-size: 1rem;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.project-card .title {
+    margin-top: 0.7rem;
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        padding-left: initial;
+    }
+    .projects {
+        padding: initial;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-card img {
+        width: 13rem;
+    }
+    .project-card {
+        width: 13rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .project-card img {
+        width: 12rem;
+    }
+    .project-card {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .project-card img {
+        width: 11rem;
+    }
+    .project-card {
+        width: 11rem;
+    }
+}
+
+/*
+ * Footer
+*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    background-color: #232335;
+    z-index: 1;
+}
+
+/*
+ * Animation
+*/
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wave-root {
+    position: relative;
+    z-index: 0;
+}

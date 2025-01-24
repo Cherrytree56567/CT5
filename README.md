@@ -21,4 +21,4 @@ npm run build
  - Footer
 
 ## Thanks to
- - Skyfall ([skyfall.dev](https://skyfall.dev))
+ - Skyfall ([skyfall.dev](https://skyfall.dev)) for the color scheme

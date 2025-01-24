@@ -19,3 +19,6 @@ npm run build
  - Cool Animation
  - Projects Menu
  - Footer
+
+## Thanks to
+ - Skyfall ([skyfall.dev](https://skyfall.dev))

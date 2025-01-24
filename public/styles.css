@@ -169,6 +169,12 @@ a {
     }
 }
 
+@media (max-height: 660px) {
+    .navbar {
+        height: 2rem;
+    }
+}
+
 /*
  * Container
 */
@@ -329,6 +335,21 @@ a {
     }
     .project-card {
         width: 11rem;
+    }
+}
+
+@media (max-width: 665px) {
+    .project-card img {
+        width: 80vw;
+    }
+    .project-card {
+        width: 82vw;
+    }
+    .projects {
+        padding: initial;
+    }
+    .section-title {
+        padding-left: 0.5rem;
     }
 }
 
